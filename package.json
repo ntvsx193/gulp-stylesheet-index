@@ -1,0 +1,51 @@
+{
+  "name": "gulp-stylesheet-index",
+  "version": "0.1.0",
+  "description": "Input html file(s) and get a stream of all referenced stylesheets which can then be usedfor further processing like concatenation, minification or for testing",
+  "homepage": "",
+  "repository": "ntvsx193/gulp-stylesheet-index",
+  "author": {
+    "name": "Artem Kolesnik",
+    "email": "ya@artemkolesnik.ru",
+    "url": "artemkolesnik.ru"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "files": [
+    "lib"
+  ],
+  "main": "./lib/index.js",
+  "keywords": [
+    "gulpplugin",
+    "scripts",
+    "index",
+    "karma",
+    "parser",
+    "htmlparser2"
+  ],
+  "devDependencies": {
+    "eslint": "^3.8.1",
+    "eslint-config-defaults": "^9.0.0",
+    "gulp": "^3.9.1",
+    "gulp-coveralls": "^0.1.4",
+    "gulp-eslint": "^3.0.1",
+    "gulp-istanbul": "^1.1.1",
+    "gulp-mocha": "^3.0.1",
+    "gulp-plumber": "^1.1.0",
+    "should": "^11.1.1"
+  },
+  "scripts": {
+    "test": "gulp",
+    "lint": "./node_modules/.bin/eslint ."
+  },
+  "license": "MIT",
+  "dependencies": {
+    "gulp-util": "^3.0.7",
+    "htmlparser2": "^3.9.2",
+    "lodash": "^4.16.4",
+    "merge": "^1.2.0",
+    "through2": "^2.0.1",
+    "vinyl-fs": "^2.4.4"
+  }
+}
